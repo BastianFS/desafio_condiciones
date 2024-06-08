@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="./assets/css/ejercicio2.css">
+</head>
+<body>
+    <div class="bigBox">
+    <div class="imgsticker1" style="background-image: url(./assets/img/rubickSticker.webp);"></div> 
+   
+    <div class="imgsticker1" style="background-image: url(./assets/img/JuggernautSticker.jpg)"></div>
+
+   
+    <div class="imgsticker1" style="background-image: url(./assets/img/ShadowFiendSticker.jpeg);"></div> 
+
+    <select name="Sticker 1" id="Stk1">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <select name="Sticker 2" id="Stk2">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <select name="Sticker 3" id="Stk3">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+</div>
+<div class="bigBox2">
+    <button onclick="
+    val1 = document.querySelector('#Stk1').value
+    val2 = document.querySelector('#Stk2').value
+    val3 = document.querySelector('#Stk3').value
+    res = Number(val1) + Number(val2) + Number(val3)
+   if(res <= 10){
+    parrafo = document.querySelector('#p1')
+    parrafo.innerHTML = res
+   }
+   else{
+    parrafo = document.querySelector('#p1')
+    parrafo.innerHTML = 'Llevas demasiados stickers'
+   }
+    ">Lleva tus Stickers!!!</button>
+    <p id="p1"></p>
+</div>
+</body>
+</html>
